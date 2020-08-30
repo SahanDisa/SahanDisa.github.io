@@ -54,7 +54,10 @@
             </div>
         
             <div class="clear"></div>
-        
+            <div>
+              <h2>Today is, </h2>
+              <h3 id="daytoday"></h3>
+            </div>
             <div class="calendar-dates">
                 <div class="days">
                     <div class="day label">SUN</div>
@@ -76,6 +79,16 @@
         <script
         src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
         <script src="/cal.js" async defer></script>
+        <script>
+          var today = new Date();
+          var dd = String(today.getDate()).padStart(2, '0');
+          var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+          var yyyy = today.getFullYear();
+
+          today = mm + '/' + dd + '/' + yyyy;
+          //document.write(today);
+          document.getElementById('daytoday').innerHTML = today;
+        </script>
     </body>
 </html>
             
