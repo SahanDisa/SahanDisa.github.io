@@ -1,0 +1,43 @@
+table {
+    border-collapse: collapse;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    box-shadow: 0 2px 15px 2px rgba(0, 0, 0, .7);
+}
+
+tr, td {
+    padding: 6px;
+    background-color: #d0e7f8;
+    width: 120px;
+    height: 50px;
+}
+
+tr:nth-child(odd) td {
+    background-color: #bcdfff;
+}
+
+tbody tr:last-of-type td:first-of-type {
+    border-radius: 0 0 0 10px;
+}
+
+tbody tr:last-of-type td:last-of-type {
+    border-radius: 0 0 10px 0;
+}
+
+th {
+    color: white;
+    font-size: 26px;
+    background-color: #007dff;
+}
+
+th:first-of-type {
+    border-radius: 10px 0 0 0;
+}
+
+th:last-of-type {
+    border-radius: 0 10px 0 0;
+}
