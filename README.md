@@ -6,3 +6,5 @@
  * clock simulator
  * digital calculator
  * calender
+ * multi-user whiteboard
+ * 2 factor gcd calculator
