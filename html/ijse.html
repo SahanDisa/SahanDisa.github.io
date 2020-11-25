@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample IJSE Site</title>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/ijseStyles.css">
+    <link rel="icon" type="img/png" href="../assests/sahanLOGO2.png">
+</head>
+<script>
+    // alert("You are Enter into Sample IJSE site\n All rights reserved\n DEVELOPED BY SAHAN DISSANAYAKA");
+</script>
+<body>
+<div class="container-fluid" id="mainbody">
+<header>
+    <div class="fixed-top">
+        <!--class="fixed-top"; if can add-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+            <img src="../assests/ijselogo.png" width="200px">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../index.html"><img src="../assests/pos/home.png" width="20vw"> Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../assests/pos/new.png" width="20vw">Discover</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../assests/pos/education.png" width="20vw">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../assests/pos/events.png" width="20vw">Events & News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../assests/pos/p5.png" width="20vw">Our students</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="../assests/pos/contact.png" width="20vw">Contacts</a>
+                    </li>
+                    <li class="nav-social">
+                        <a class="nav-link" href="#"></a>
+                        <img src="../assests/SM/fb.png" width="20px" alt="fb">
+                        <img src="../assests/SM/linkedin.png" width="20px" alt="linkdin">
+                        <img src="../assests/SM/youtube.png" width="20px" alt="youtube">
+                        <img src="../assests/SM/twitter.png" width="20px" alt="twitter">
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
+<!--Start Slideshow-->
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="margin-top: 50px">
+    <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" src="../assests/ijse/a.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../assests/ijse/b.jpg" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../assests/ijse/c.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../assests/ijse/d.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../assests/ijse/e.jpg" alt="Third slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block w-100" src="../assests/ijse/f.jpg" alt="Third slide">
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</div>
+<!--Finish Slideshow-->
+<!--CHART STARTS-->
+    <!--FORM STARTS-->
+    <div class="divone" style="font-size: 14px">
+        <div class="container"><br/><br/>
+            <form class="needs-validation" novalidate>
+                <select class="custom-select">
+                    <option selected>Select courses</option>
+                    <option value="1">CMJD CERTIFICATE LEVEL</option>
+                    <option value="2">CMJD DIPLOMA LEVEL</option>
+                    <option value="3">CMJD HND LEVEL</option>
+                    <option value="4">GDSE(GRADUATE DIPLOMA IN SOFTWARE ENGINEERING)</option>
+                    <option value="5">CMJD PROFESSIONAL LEVEL</option>
+                    <option value="6">ABSD(ADVANCED BUSINESS SOLUTION DEVELOPER)</option>
+                    <option value="7">OCJM</option>
+                </select>
+                <div class="form-row">
+                    <div class="col-md-12 col-lg-6">
+                        <label for="validationTooltip01">First name</label>
+                        <input type="text" class="form-control" id="validationTooltip01" placeholder="First name" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-6">
+                        <label for="validationTooltip02">Last name</label>
+                        <input type="text" class="form-control" id="validationTooltip02" placeholder="Last name" value="" required>
+                        <div class="valid-tooltip">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md-12 ">
+                        <label for="validationTooltipUsername">E-Mail</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
+                            </div>
+                            <input type="text" class="form-control" id="validationTooltipUsername" placeholder="T.sahan998@gmail.com" aria-describedby="validationTooltipUsernamePrepend" required>
+                            <div class="invalid-tooltip">
+                                Please choose a unique and valid username.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-12 col-lg-3 ">
+                        <label for="validationTooltip03">City</label>
+                        <input type="text" class="form-control" id="validationTooltip03" placeholder="eg:Panadura" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <label for="validationTooltip04">State</label>
+                        <input type="text" class="form-control" id="validationTooltip04" placeholder="eg:Colombo" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <label for="validationTooltip05">Address</label>
+                        <input type="text" class="form-control" id="validationTooltip05" placeholder="eg:No 75/7 Chandradekara Road" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid address.
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-lg-3">
+                        <label for="validationTooltip05">Road</label>
+                        <input type="text" class="form-control" id="validationTooltip06" placeholder="eg:Horethuduwa Moratuwa" required>
+                        <div class="invalid-tooltip">
+                            Please provide a valid zip.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button class="btn btn-info" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--FORM ENDS-->
+<div class="next">
+    <h1>IJSE CORE SKILLS</h1>
+    <h3>The Fastest, Easiest Way To Be a Graduate Software Engineer in Sri Lanka</h3>
+    <!--<div id="coreskills-box" onclick="one()"></div>-->
+    <div>
+    <div class="container" id="grid" style="margin-left: 10vw; width: 100%; height: 450px" >
+        <!--<div id="me" style="margin-left: 40%">-->
+        <!--<h1>Sahan</h1>-->
+        <!--</div>-->
+    <div class="ijse">
+        <img src="../assests/ijselogo.png" width="200vw" id="img">
+        <a href="../index.html"><h3>Core Skills</h3></a>
+        <div class="chain">
+            <img src="../assests/chain-1.png" id="cha1">
+        </div>
+        <div class="chain">
+            <img src="../assests/chain-2.png" id="cha2">
+        </div>
+        <div class="chain">
+            <img src="../assests/chain-3.png" id="cha3">
+        </div>
+        <div class="chain">
+            <img src="../assests/chain-4.png" id="cha4">
+        </div>
+        <div class="chain">
+            <img src="../assests/chain-5.png" id="cha5">
+        </div>
+        <div class="chain">
+            <img src="../assests/chain-6.png" id="cha6">
+        </div>
+    </div>
+    <div class="box1" id="box1">
+        <br/><br/><br/><br/>
+    <h4>Concepts</h4>
+    </div>
+    <div class="box1" id="box2">
+    <br/><br/><br/><br/>
+    <h4>Technology</h4>
+    </div>
+    <div class="box1" id="box3">
+    <br/><br/><br/><br/>
+    <h4>Development</h4>
+    </div>
+    <div class="box1" id="box4">
+    <br/><br/><br/><br/>
+    <h4>Experience</h4>
+    </div>
+    <div class="box1" id="box5">
+    <br/><br/><br/><br/>
+    <h4>Expertise</h4>
+    </div>
+    <div class="box1" id="box6">
+    <br/><br/><br/><br/>
+    <h4>Knowledge</h4>
+    </div>
+    </div>
+    <!--//CHART ENDS-->
+
+    </div>
+</div>
+
+
+<!--BODY STARTS-->
+<div class="container-fluid" id="coreskillsAfter">
+    <h2>Why is IJSE the only Choice for IT, Computer Science and Software Engineering?</h2>
+    <p>Suranga Inspired by its mission “assisting the students to be qualified professionally and producing individuals desired and demanded
+        by the market standards of the existing setup”.
+        IJSE, being a leading IT education provider in Sri Lanka has produced over 4300 skillful IT professionals occupying eminent
+        positions in many reputed companies in the island. Since its inception in 2006,
+        it focuses on enhancing the skills and attitudes which are desperately sought by the IT industry.
+        Obtaining a software engineering degree from IJSE opens doors to countless possibilities in the industry both in Sri Lanka
+        and abroad therefore IJSE is surely the best institute for after A/L course programs in IT and Computer Science.
+        Distinguished as the only Oracle authorized training center in Sri Lanka, IJSE is undoubtedly the best choice for building a
+        successful career in software engineering industry.
+    </p>
+</div>
+    <div class="jumbotron">
+        <h3 align="center">LASTEST UPDATES</h3>
+        <!--CARD GROUP 1-->
+        <div class="card-group">
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assests/page/award_ceremony.JPG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Award Ceremony</h5>
+                        <p class="card-text">IJSE is truly proud to announce its acceptance as an accredited course provider for BCS certifications in Sri Lanka.
+                            This joint collaboration was affirmed at a special ceremony marking the 10th anniversary of IJSE at BMICH in Colombo....</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assests/page/bcs.JPG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">BCS Workshop</h5>
+                        <p class="card-text">Since 2015 IJSE was affiliate with bcs,
+                            The professionals always come all the way from UK to maintain the quality product inside that of the institute.
+                            With the huge support from them ,
+                            there are outrageous results produced from IJSE these years....</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assests/page/trip.JPG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Annual Trip</h5>
+                        <p class="card-text">"All work no play makes jack a dull boy" goes the saying.IJSE holds various co-curricular activities in
+                        order to promote team spirit,cohesiveness and unity among the students of a batch,as such characteristics are often sought in a
+                        prospective candidate in the It industry....</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CARD GROUP 1 ENDS-->
+        <!--CARD GROUP 2-->
+        <div class="card-group">
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assests/page/awardcere.JPG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to BCS degree program</h5>
+                        <p class="card-text">IJSE is truly proud to announce its acceptance as an accredited course provider for BCS certifications in Sri Lanka.
+                            This joint collaboration was affirmed at a special ceremony marking the 10th anniversary of IJSE....</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assests/page/events.JPG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">New Year Celebration</h5>
+                        <p class="card-text">Since 2015 IJSE was affiliate with bcs,
+                            The professionals always come all the way from UK to maintain the quality product inside that of the institute.
+                            With the huge support from them ,
+                            there are outrageous results produced from IJSE these years....</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="../assests/page/De.JPG" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Project Presentation VIVA ABSD</h5>
+                        <p class="card-text">At IJSE,we're in the business of focusin g on continuous enhancement od the proficiency of skills
+                        of our students,we believe that is possible onle with the right application of theroy in accordance with accepted
+                        industrialized standards.The project presentation viva of batch....</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--CARD GROUP 2 ENDS-->
+    <!--ENDS OF LASTEST UPDATES-->
+    </div>
+<!--ENDS OF THE MAINBODY CONTAINER-->
+</div>
+<div class="container-fluid" id="other content">
+<!--STARTS OF OTHER CONTENT-->
+<div class="container">
+    <div ID="ROUTE TO MSC">
+        <!--ROUTE TO MSC STARTS-->
+        <div class="row">
+        <div class="col-md-12 col-lg-3">
+            <p align="center">
+            <img src="../assests/page/msc.jpg" width="175vw">
+            </p>
+        </div>
+        <div class="col-md-12 col-lg-9">
+            <h3 style="font-family: SansSerif">Your Route to a Master Degree (MSc)</h3>
+            <p>Whether you are just starting out in your career, you have some experience, or you are changing your profession, qualifiations from IJSE, The Institute of Software Engineering will prepare you for a long and rewarding career in IT..
+
+                Click here to see the degree path..</p>
+        </div>
+        <!--ROUTE TO MSC ENDS-->
+        </div>
+    </div>
+    <!--ORACLE EDUCATION STARTS-->
+    <div class="ORACLE">
+        <h3>We are the only Oracle Education/Technology provider in Sri Lanka</h3>
+        <p>It is since the year 2006 that we have been performing the task of educating students in order to prepare them
+            for Oracle Examinations (previously presented by the Sun Microsystem). We are the only institute that carries
+            out this process in a manner that truly produces a programmer who can face any real world problem rather than
+            making our training just an exam oriented set of sessions where it is only the examination questions that are
+            discussed equipping the students for the exam but no further. Our system of education has been able to create
+            fully fledged programmers who excel in both theoretical and practical knowledge out of thousands of undergraduates.
+            Our institute has been able to turn over as much as four thousand undergraduate students for the Oracle Examinations
+            where they have displayed results that are rarely produced by any other Oracle educator in the world making
+            IJSE without doubt the perfect choice for obtaining a recognized Software Engineering degree in Sri Lanka.</p>
+        <p>Our institute has been able to turn over as much as four thousand undergraduate students for the Oracle Examinations
+            where they have displayed results that are rarely produced by any other Oracle educator in the world making IJSE
+            without doubt the perfect choice for obtaining a recognized Software Engineering degree in Sri Lanka.</p>
+    </div>
+    <!--ORACLE EDUCATION ENDS-->
+    <!--10th YEAR ANNIVERSARY-->
+    <div class="10thYEAR ANNIVERSARY" id="anniversaryImg">
+        <div class="row">
+            <div class="col-md-12 col-lg-5">
+                <p align="center">
+                    <img src="../assests/page/phone.png" width="350vw" alt="10th Anniversary">
+                </p>
+            </div>
+            <div class="col-md-12 col-lg-7" id="anniversary">
+                <h3>10th Anniversary</h3>
+                <h6>In last 10 years had produced 4200 software engineers to the nation....!</h6>
+                <p>IJSE was started on the 10th January of 2006 in Panadura,
+                    opening doors for the younger generation to materialize their dream of becoming a software engineering / quality assurance Engineer through providing recognized qualifications in IT and Software Engineering.
+                    At the start IJSE marched forward with a highly dedicated team of ten individuals whose hard work resulted in opening the second branch in Galle. Within this short period of time, IJSE has achieved
+                    a leading position among the providers of Software Engineering degrees in Sri Lanka.
+                    The uniqueness of realizing the demanded programmers and IJSE’s infinite flexibilities to explore
+                    new ways and best products could mark the journey a fast moving result oriented one.
+                    This achievement in short has made our degree in software engineering highly desired and sought after out of all other IT and Computer Science degrees i
+                    n Sri Lanka. The Committed individuals of our team and student centered values have brought IJSE from 30 to 700 students following our various courses
+                    in IT and Software Engineering. Our records have indicated that we had produced more than 4200 valuable software engineering professionals to the nation,
+                    and as a Sri Lankan IT education Institute we are proud to say that, many students of our first batch were recruited by most prestigious software companies in Sri Lanka placing us above all other IT course providers from the very beginning
+                    of our journey as an institute for higher education in software engineering and IT/Computer Science.
+                    (Eg. Virtusa, IFS, John Keels, Millennium IT, etc..)</p>
+            </div>
+        </div>
+    </div>
+    <!--10TH YEAR ANNIVERSARY ENDS-->
+    <div class="media">
+        <div class="media-body">
+        </div>
+        <div class="container">
+            <div class="embed-responsive embed-responsive-16by9" id="video">
+                <iframe id="video1" src="../video/IJSE_VIDEO.mp4" allowfullscreen></iframe>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--ENDS OF OTHER CONTENT-->
+</div>
+<div class="myfooter">
+    <div class="row" style="width: 100%">
+        <div class="col-md-3">
+            <h1></h1>
+            <img src="../assests/ijselogo.png" width="220px">
+            <p>Institute of Software Engineering</p>
+            <p>Hotline : +94 711 202 202</p>
+            <p>E-Mail : info@ijse.lk</p>
+        </div>
+        <div class="col-md-3">
+            <h1></h1>
+            <p>
+            <h5>Panadura Branch</h5>
+            <p>Tel: +94 38 2222 855<p>
+            <p>     : +94 38 2222 800<p>
+            : +94 38 2244 855
+            : +94 711 101 101
+            Address
+            : #223A 1/2,Galle Rd,Panadura
+
+            <h5>Galle Branch</h5>
+            <p>Tel
+                : +94 912 248 460
+                : +94 711 303 303
+                Address
+                : #126 Colombo Road,Galle</p>
+        </div>
+        <div class="col-md-3">
+            <h1></h1>
+            <h5>Quick Links</h5>
+            <p>Lecture Panel</p>
+            <p>Student Project</p>
+            <p>Best Project</p>
+            <p>Courses</p>
+            <p>Events & News</p>
+        </div>
+        <div class="col-md-3">
+            <h1></h1>
+            <h5>Find us On</h5>
+            <img src="../assests/SM/fb.png" width="50px">
+            <img src="../assests/SM/youtube.png" width="50px">
+            <img src="../assests/SM/twitter.png" width="50px">
+        </div>
+    </div>
+</div>
+<script type="application/javascript" src="../js/jquery-3.3.1.min%20-%20Copy.js" rel="script"></script>
+<script src="../js/bootstrap.min.js" rel="script"></script>
+<script>
+    function one() {
+        var mn = document.getElementById("#coreskills-box");
+        mn.addEventListener("mouseenter", function () {
+            $('#coreskills-box').css("background-color", "red");
+            $('#coreskills-box').css("height", "110px");
+            $('#coreskills-box').css("width", "110px");
+            $('#coreskills-box').css("border-radius", "55px");
+        });
+    }
+</script>
+</body>
+</html>

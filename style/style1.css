@@ -1,0 +1,30 @@
+#header{
+    height: 40vh;
+    width: 100%;
+    /*background-color: #4e555b;*/
+    background-image: url("../assests/Web.back2.jpg");
+
+}
+.logo{
+    font-size: 130px;
+}
+#footer{
+    height: 140px;
+    width :100%;
+    background-color: #4e555b;
+    position: relative;
+    bottom: 0;
+
+}
+.con{
+    color: black;
+}
+#con{
+    color: white;
+}
+#fot{
+    color: white;
+}
+#assi1{
+    height: 200px;
+}

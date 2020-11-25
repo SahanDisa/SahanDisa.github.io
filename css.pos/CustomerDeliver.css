@@ -1,0 +1,70 @@
+h1{
+    margin: 0;
+}
+.deliver{
+    height: 602px;
+    width: 12%;
+    left: 0;
+}
+#mydel{
+    position: absolute;
+    height:300px;
+    width: 80%;
+    /*background-color: #1086c6;*/
+    margin-left: 110px;
+    margin-top: -430px;
+}
+.one{
+    position: absolute;
+    left: 0;
+}
+.two{
+    position: absolute;
+    left: 35%;
+}
+.three{
+    position: absolute;
+    right: 0;
+}
+.four{
+    position: absolute;
+    left:0;
+}
+.five{
+    position: absolute;
+    left:35%;
+}
+.six{
+    position: absolute;
+    right: 0;
+}
+.navideliver {
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    right: 0;
+    margin-top: -170px;
+
+}
+div.maindeliver div.navideliver ul li{
+    color: black;
+    list-style-type: none;
+    display: inline;
+    padding: 120px;
+}
+.contend{
+    position: absolute;
+    margin-top: -150px;
+    height: 600px;
+    width: 100%;
+    background-color: aquamarine;
+
+}
+.form{
+    position: absolute;
+    margin-top: 20vw;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

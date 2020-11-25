@@ -1,0 +1,56 @@
+.header{
+    height: 200px;
+    width: 100%;
+    background-color: lightcoral ;
+    /*background: rgb(142,160,215);*/
+    /*background: linear-gradient(90deg, rgba(142,160,215,1) 27%, rgba(174,201,172,1) 86%, rgba(114,148,214,1) 98%);*/
+    background: rgb(114,237,50);
+    background: linear-gradient(0deg, rgba(114,237,50,0.9528186274509804) 0%, rgba(18,213,37,0.9304096638655462) 100%);
+}
+
+.front{
+    position: absolute;
+    margin-left: 400px;
+}
+div.header img{
+    position: absolute;
+    padding: 0px;
+}
+.nav{
+    position: absolute;
+    right: 0;
+}
+div.header div.nav ul li{
+    color: black;
+    list-style-type: none;
+    display: inline-block;
+    padding: 20px;
+}
+.maincontend{
+    position: relative;
+    height: 700px;
+    width: 100%;
+    background-color: hsla(163, 85%, 39%, 0.84);
+    background: rgb(148,237,50);
+    background: linear-gradient(0deg, rgba(148,237,50,0.9304096638655462) 19%, rgba(192,236,42,0.9920343137254902) 100%);
+}
+.ourproducts{
+    position: absolute;
+    margin-left: 300px;
+}
+.footer{
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background-color: #1086c6;
+    background: rgb(114,237,50);
+    background: linear-gradient(0deg, rgba(114,237,50,0.9528186274509804) 0%, rgba(18,213,37,0.9304096638655462) 100%);
+}
+.navigation{
+    position: absolute;
+    height: 700px;
+    width: 150px;
+    background-color: gray;
+    left: 0;
+
+}

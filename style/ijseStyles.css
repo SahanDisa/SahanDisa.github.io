@@ -1,0 +1,261 @@
+@media all and (max-width: 993px){
+    .divone{
+        background-color: red;
+        background: rgb(187,187,168);
+        background: linear-gradient(180deg, rgba(187,187,168,1) 9%, rgba(223,32,57,1) 69%, rgba(238,12,31,1) 98%);
+        box-shadow: 2px 2px 7px 2px #120C0A;
+        box-shadow: 2px 2px 7px 2px #120C0A;
+        height: 600px;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+        font-size: 30px;
+    }
+    .grid{
+        position:absolute;
+        margin-left: 15vw;
+        margin-top: 2vw;
+    }
+    .ijse{
+        position: absolute;
+        height: 150px;
+        width:150px;
+        border-radius: 75px;
+        margin-left: 28vw;
+        margin-top: 3vw;
+        z-index: 500;
+    }
+
+    #cha1{
+        position: absolute;
+        margin-left:-18vw;
+        margin-top: -9vw;
+        z-index: -20;
+
+    }
+    #cha2{
+        margin-left: 11vw;
+        margin-top: -17vw;
+        z-index: -20;
+    }
+    #cha3{
+        margin-left: -15vw;
+        margin-top: -6vw;
+        z-index: -20;
+    }
+    #cha4{
+        margin-left: 12vw ;
+        margin-top: -6vw ;
+        z-index: -20;
+    }
+    #cha5{
+        margin-left:-5vw;
+        z-index: -30 ;
+    }
+    #cha6{
+        margin-left: 8vw;
+        z-index: -20;
+    }
+    .chain{
+        position: absolute;
+        display: none;
+    }
+    .box1{
+
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        position: absolute;
+        border: 3px solid #e8d9d9;
+        background: rgb(212,207,215);
+        background: linear-gradient(90deg, rgba(212,207,215,1) 0%, rgba(209,197,197,1) 48%, rgba(204,201,196,1) 100%);
+        z-index: -20;
+    }
+    #box1{
+        margin-left: 2vw;
+        background-image: url("../assests/grey/1.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+    }
+    #box2{
+        margin-left: 7vw;
+        margin-top: 11vw;
+        background-image: url("../assests/grey/2.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #box3{
+        margin-left: 19vw;
+        margin-top: 24vw;
+        background-image: url("../assests/grey/3.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #box4{
+        margin-left: 37vw;
+        margin-top: 24vw;
+        background-image: url("../assests/grey/4.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #box5{
+        margin-left: 54vw;
+        margin-top: 11vw;
+        background-image: url("../assests/grey/5.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #box6{
+        margin-left: 58vw ;
+        background-image: url("../assests/grey/6.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #img{
+        margin-left: -1.5vw;
+    }
+    .myfooter{
+        background-color: #434A54;
+        color: white;
+    }
+    .nav-social {
+        position: absolute;
+        right: 0;
+    }
+}
+@media all and (min-width:993px) {
+    .nav-social {
+        position: absolute;
+        right: 0;
+    }
+    .divone {
+        background-color: red;
+        background: rgb(187, 187, 168);
+        background: linear-gradient(180deg, rgba(187, 187, 168, 1) 9%, rgba(223, 32, 57, 1) 69%, rgba(238, 12, 31, 1) 98%);
+        box-shadow: 2px 2px 7px 2px #120C0A;
+        box-shadow: 2px 2px 7px 2px #120C0A;
+        height: 55vh;
+        width: 80vw;
+        margin-left: 10vw;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .grid{
+        margin-left: 20vw;
+        margin-top: 2vw;
+
+    }
+    .ijse{
+        position: absolute;
+        height: 150px;
+        width:150px;
+        border-radius: 75px;
+        margin-left: 28vw;
+        margin-top: 3vw;
+        z-index: 500;
+    }
+
+    #cha1{
+        position: absolute;
+        margin-left:-18vw;
+        margin-top: -9vw;
+        z-index: -20;
+
+    }
+    #cha2{
+        margin-left: 11vw;
+        margin-top: -17vw;
+        z-index: -20;
+    }
+    #cha3{
+        margin-left: -15vw;
+        margin-top: -6vw;
+        z-index: -20;
+    }
+    #cha4{
+        margin-left: 12vw ;
+        margin-top: -6vw ;
+        z-index: -20;
+    }
+    #cha5{
+        margin-left:-5vw;
+        margin-top: -6vw;
+        z-index: -30 ;
+    }
+    #cha6{
+        margin-left: 8vw;
+        margin-top: -15vw;
+        z-index: -20;
+    }
+    .chain{
+        /*position: absolute;*/
+    }
+    .box1{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        position: absolute;
+        border: 3px solid #e8d9d9;
+        background: rgb(212,207,215);
+        background: linear-gradient(90deg, rgba(212,207,215,1) 0%, rgba(209,197,197,1) 48%, rgba(204,201,196,1) 100%);
+        z-index: -20;
+    }
+    #box1{
+        margin-left: 2vw;
+        background-image: url("../assests/grey/1.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+
+    }
+    #box2{
+        margin-left: 7vw;
+        margin-top: 11vw;
+        background-image: url("../assests/grey/2.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #box3{
+        margin-left: 19vw;
+        margin-top: 24vw;
+        background-image: url("../assests/grey/3.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #box4{
+        margin-left: 37vw;
+        margin-top: 24vw;
+        background-image: url("../assests/grey/4.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #box5{
+        margin-left: 54vw;
+        margin-top: 11vw;
+        background-image: url("../assests/grey/5.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #box6{
+        margin-left: 58vw ;
+        background-image: url("../assests/grey/6.png");
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #img{
+        margin-left: -1.5vw;
+    }
+    .myfooter{
+        background-color: #434A54;
+        color: white;
+    }
+    #coreskills-box{
+        height: 100px;
+        width:100px;
+        border-radius: 50px;
+        border: 3px solid #e8d9d9;
+        background: rgb(212,207,215);
+        background: linear-gradient(90deg, rgba(212,207,215,1) 0%, rgba(209,197,197,1) 48%, rgba(204,201,196,1) 100%);
+    }
+}

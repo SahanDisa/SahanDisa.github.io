@@ -1,0 +1,36 @@
+.design{
+    height: 200px;
+    width: 80%;
+    border-left-color: #5bc0de;
+
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    border: 1px solid #5bc0de;
+    border-left-width: .25rem;
+    border-radius: .25rem;
+}
+.myNav{
+    background-color: #5a6268;
+    height: 100%;
+}
+.myfooter{
+    background-color: #4e555b;
+    margin: 0;
+}
+#profile{
+    margin-left: 3vw;
+    height: 150px;
+    width: 150px;
+    background-color: #f1b0b7;
+    border-radius: 75px;
+}
+.myfooter ul{
+    font-size: 20px;
+    color: white;
+}
+header{
+    height: 35vh;
+    width: 100%;
+    background-image: url("../assests/posback1.jpg");
+}

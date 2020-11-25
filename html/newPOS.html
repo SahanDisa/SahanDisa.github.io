@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Final Project</title>
+    <link rel=stylesheet type="text/css" href="../css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../css/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/mainStyles.css">
+    <link rel="icon" type="img/png" href="../assests/logo1.png">
+</head>
+<style>
+
+</style>
+<body>
+<!--NAVBAR STARTS-->
+<div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <img src="../assests/sahanLOGO.png" width="50px">
+        <a class="navbar-brand" href="#">CafePro</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="../index.html"><img src="../images/pos/home.png" width="20px">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><img src="../images/pos/dashboard.png" width="20px">Dashboard</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><img src="../images/pos/p2.png" width="20px">Delivery</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><img src="../images/pos/p3.png" width="20px">Orders</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../html/ijse.html"><img src="../images/pos/contact.png" width="20px">Contact Us(IJSE)</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Employees</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../html/ijse.html">Contact Us(IJSE)</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                <!--<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>-->
+                <button class="btn btn-outline-primary my-2 my-sm-0" type="submit"><a href="../html/sign-up.html">Sign Up</a></button>
+            </form>
+        </div>
+    </nav>
+</div>
+<header>
+
+</header>
+<!--<audio autoplay loop controls src="video/audio1.mp3"><h6>Play</h6></audio>-->
+<!--NAVBAR ENDS-->
+<!--FIRST CONTROL PANEL STARTS-->
+<div id="main content">
+<div class="row" style="width: 100%">
+    <div class="col-3">
+        <div class="myNav">
+            <div class="ui card">
+                <a class="image" href="#">
+                    <img src="../assests/logo2.png">
+                </a>
+                <div class="content">
+                    <a class="header" href="#">Steve Jobes</a>
+                    <div class="meta">
+                        <a>Last Seen 2 days ago</a>
+                    </div>
+                </div>
+            </div>
+        <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+            <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">DashBoard</a>
+            <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Customer</a>
+            <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Orders</a>
+            <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Items</a>
+            <a class="nav-link" id="v-pills-delivery-tab" data-toggle="pill" href="#v-pills-delivery" role="tab" aria-controls="v-pills-delivery" aria-selected="false">Delivery</a>
+            <a class="nav-link" id="v-pills-fittings-tab" data-toggle="pill" href="#v-pills-fittings" role="tab" aria-controls="v-pills-fittings" aria-selected="false">Settings</a>
+            <a class="nav-link" id="v-pills-employee-tab" data-toggle="pill" href="#v-pills-employee" role="tab" aria-controls="v-pills-employee" aria-selected="false">Employee</a>
+            <img src="../assests/apple.png" width="100vw">
+            <img src="../assests/android.png" width="100vw">
+            <hr/>
+        </div>
+        </div>
+    </div>
+    <!--START BODY-->
+    <div class="col-9">
+        <div class="tab-content" id="v-pills-tabContent">
+            <!--START DASHBOARD-->
+            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                <div class="container-fluid">
+                    <p id="dashboard"></p>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#v-pills-home">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">DashBoard</li>
+                        </ol>
+                    </nav>
+                    <div class="design">
+                        <h2>Welcome to your Store..</h2>
+                        <h3>Here Are our Strategies</h3>
+                    </div>
+                    <hr/>
+                    <div class="ui four statistics">
+                        <div class="statistic">
+                            <div class="value">
+                                22
+                            </div>
+                            <div class="label">
+                                Sections
+                            </div>
+                        </div>
+                        <div class="statistic">
+                            <div class="text value">
+                                Three<br>
+                                Thousand
+                            </div>
+                            <div class="label">
+                                Signups
+                            </div>
+                        </div>
+                        <div class="statistic">
+                            <div class="value">
+                                <i class="plane icon"></i> 7
+                            </div>
+                            <div class="label">
+                                Categories
+                            </div>
+                        </div>
+                        <div class="statistic">
+                            <div class="value">
+                                <img src="../assests/logo1.png" class="ui circular inline image">
+                               21
+                            </div>
+                            <div class="label">
+                                Team Members
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Customers</div>
+                                <div class="card-body">
+                                    <img src="../images/pos/p2.png" width="100px">
+                                    <h3>123</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Items</div>
+                                <div class="card-body">
+                                    <img src="../images/pos/p1.png" width="100px">
+                                    <h3>101</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                <div class="card-header">MyOrders</div>
+                                <div class="card-body">
+                                    <img src="../images/pos/p3.png" width="100px">
+                                    <h3>988</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-3 col-lg-3">
+                            <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
+                                <div class="card-header">Settings</div>
+                                <div class="card-body">
+                                    <img src="../images/pos/settings.png" width="100px">
+                                    <h3>NEW</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Steps Animations-->
+                    <div class="ui unstackable steps">
+                        <div class="step">
+                            <i class="truck icon"></i>
+                            <div class="content">
+                                <div class="title">Shipping</div>
+                                <div class="description">Choose your shipping options</div>
+                            </div>
+                        </div>
+                        <div class="active step">
+                            <i class="dollar icon"></i>
+                            <div class="content">
+                                <div class="title">Billing</div>
+                                <div class="description">Enter billing information</div>
+                            </div>
+                        </div>
+                        <div class="disabled step">
+                            <i class="info circle icon"></i>
+                            <div class="content">
+                                <div class="title">Confirm Order</div>
+                                <div class="description">Verify order details</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--ENDS DASHBOARD-->
+            <!--CUSTOMER PAGE-->
+            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                <div class="container-fluid">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#v-pills-home">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Customer</li>
+                        </ol>
+                    </nav>
+                    <div class="jumbotron">
+                        <h1>Hi there This is your Scafe Pro Website......</h1>
+                        <button class="btn btn-primary">Vegetables</button>
+                        <button class="btn btn-light">Friuts</button>
+                        <button class="btn btn-warning">Grains</button>
+                        <button class="btn btn-danger">Drinks</button>
+                        <button class="btn btn-success">Milk Products</button>
+                        <button class="btn btn-dark">Home & Garden Items</button>
+                        <button class="btn btn-info">Stationary Items</button>
+
+                    </div>
+                    <div class="jumbotron-fluid">
+                        <h1>Sign up and join our Community......</h1>
+                    </div>
+                    <div class="container">
+                        <form>
+                            <div class="form-group">
+                                <label>Customer ID</label>
+                                <input type="text" class="form-control" id="cusID">
+                                <label>Customer Name</label>
+                                <input type="text" class="form-control" id="cusName">
+                            </div>
+                            <div class="form-group">
+                                <label>Customer Address</label>
+                                <input type="text" class="form-control" id="cusAddress">
+                            </div>
+                            <div class="form-group">
+                                <label>Customer TP</label>
+                                <input type="text" class="form-control" id="cusTP">
+                            </div>
+
+                            <button class="btn btn-success" id="btnAdd" value="add" onclick="AddData()" type="button">Save Customer</button>
+                            <button class="btn btn-danger" value="clear" onclick="ResetForm">Clear</button>
+                            <button class="btn btn-info">Next</button>
+                        </form>
+                        <table class="table" id = "cusTable" cellspacing = "0px" cellpadding = "20px" text-align = "center">
+                            <thead class="bg-danger">
+                            <tr>
+                                <td>ID</td>
+                                <td>Name</td>
+                                <td>Address</td>
+                                <td>TelePhone</td>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">Well done!</h4>
+                        <p>Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.</p>
+                        <hr>
+                        <p class="mb-0">Whenever you need to, be sure to use margin utilities to keep things nice and tidy.</p>
+                    </div>
+                </div>
+            </div>
+            <!--CUSTOMER PAGE ENDS-->
+            <!--ORDER PAGE STARTS-->
+            <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#v-pills-home">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Orders</li>
+                    </ol>
+                </nav>
+                <h3>Orders</h3>
+                <hr/>
+                <div class="row">
+                    <div class="col-md-12" style="font-size: 14px">
+                        <div class="card border-success mb-3" style="...">
+                            <div class="card-header bg-transparent border-success">Customer Details</div>
+                            <div class="card-body text-success">
+                                <h5 class="card-title">Customer Details</h5>
+                                <form class="form-inline">
+                                    <div class="col-sm-2 col-form-label col-form-label-sm">
+
+                                    </div>
+
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Customer</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="colcusName" placeholder="First Second">
+                                            <button type="submit" class="btn btn-success mb-2">Add</button>
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModalCenter">
+                                                Add Manual
+                                            </button>
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5>
+                                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                                <span aria-hidden="true">&times;</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            ...
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Tel</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="colFormLabelSm" placeholder="011*******">
+                                        </div>
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Credit Limit</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="card-footer bg-transparent border-success">Total Amount</div>
+                        </div>
+                        <div class="card border-info mb-3" style="max-width: 56rem;">
+                            <div class="card-header">Invoice Details</div>
+                            <div class="card-body text-info">
+                                <h5 class="card-title">Invoice Details</h5>
+                                <form>
+                                    <div class="form-row">
+                                        <div class="col-7">
+                                            <input type="text" class="form-control" placeholder="City">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="State">
+                                        </div>
+                                        <div class="col">
+                                            <input type="text" class="form-control" placeholder="Zip">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12" >
+                        <div class="card" style="max-width: 56rem;">
+                            <div class="card-header">Item Select</div>
+                            <div class="card-body text-primary">
+                                <h5 class="card-title">Item Select</h5>
+                                <form>
+                                    <div class="form-group row">
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Item</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="colFormLabelSms">
+                                        </div>
+                                        <label for="colFormLabelSm" class="col-sm-2 col-form-label col-form-label-sm">Order Quantity</label>
+                                        <div class="col-sm-10">
+                                            <input type="email" class="form-control form-control-sm" id="colFormLabelSmss">
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="col-7">
+                                                <input type="text" class="form-control" placeholder="Price">
+                                            </div>
+                                            <div class="col">
+                                                <input type="text" class="form-control" placeholder="Quantity">
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-danger">Add Order</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="alert alert-danger" role="alert">
+                        <h1>TOTAL 00.0 LKR</h1>
+                        <a href="#" class="alert-link"></a>.
+                    </div>
+                </div>
+                <!--FINISH ORDER FORM-->
+            </div>
+            <!--FINISH ORDER PAGE -->
+            <!--ITEM PAGE STARTS-->
+            <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#v-pills-home">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Items</li>
+                    </ol>
+                </nav>
+                <div class="card border-primary mb-3" >
+                    <div class="card-header">Items Search</div>
+                    <div class="card-body text-primary">
+                        <h5 class="card-title">Search Items</h5>
+                        <p class="card-text">Type the name and Search</p>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Item Code" id="itemCode">
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Item Description" id="itemDesc">
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Unit Price" id="itemUnit">
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="text" class="form-control" placeholder="Quantity" id="itemQuan">
+                                </div>
+                            </div>
+                            <div class="container">
+                                <button class="btn btn-info">Search</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-info" id="itemAdd" value="add" onclick="AddItem()">Add</button>
+                    <button type="button" class="btn btn-success" id="itemUpdate">Update</button>
+                    <button type="button" class="btn btn-warning" id="itemSearch">Search</button>
+                    <button type="button" class="btn btn-danger" id="itemDelete">Delete</button>
+                </div>
+                <table class="table" id="itemTable">
+                    <thead class="thead-light">
+                    <tr>
+                        <th scope="col">Item Code</th>
+                        <th scope="col">Item description</th>
+                        <th scope="col">Unit Price</th>
+                        <th scope="col">Item Quantity</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+            <!--ITEM PAGE ENDS-->
+            <div class="tab-pane fade" id="v-pills-delivery" role="tabpanel" aria-labelledby="v-pills-delivery-tab">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#v-pills-home">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Delivery</li>
+                    </ol>
+                </nav>
+            </div>
+            <!--STARTS SETTINGS PAGE-->
+            <div class="tab-pane fade" id="v-pills-fittings" role="tabpanel" aria-labelledby="v-pills-fittings-tab">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#v-pills-home">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Settings</li>
+                    </ol>
+                </nav>
+            </div>
+            <!--STARTS EMPLOYEE PAGE-->
+            <div class="tab-pane fade" id="v-pills-employee" role="tabpanel" aria-labelledby="v-pills-employee-tab">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#v-pills-home">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Employee</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--END OF FIRST CONTROL PANEL-->
+<!--FOOTER-->
+<div class="myfooter">
+    <p align="center"><i class="large certificate icon"></i><i class="large certificate icon"></i></p>
+    <h3 style="color:wheat;">IJSE WEB DEVELOPMENT<small>student</small>Sahan Dissanayaka</h3>
+    <h4 align="center">HTML5 CSS3 JS BOOTSTRAP PHP<br/>TS CREATION<small>JS single page loader</small></h4>
+    <h5>@Copyright TS12.lk Sahan Dissanayaka Sri Lanka. All rights reserved</h5>
+</div>
+<script type="application/javascript" src="../js/jquery-3.3.1.min%20-%20Copy.js" rel="script"></script>
+<script src="../js/bootstrap.min.js" rel="script"></script>
+<script src="../js/Customer.js" rel="script"></script>
+<script>
+    alert("Hello there.... You are enter into the website\n WELCOME");
+</script>
+</body>
+</html>
