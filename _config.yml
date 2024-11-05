@@ -12,7 +12,7 @@ title                    : "Sahan Dissanayaka"
 title_separator          : "-"
 name                     : &name "Sahan Dissanayaka"
 description              : &description "PhD Student at University of Central Florida"
-url                      : https://sahandisa.github.io/academicprofile.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://sahandisa.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "/" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
@@ -57,9 +57,9 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/sahan-dissanayaka-3099b9191/"
   mastodon         : # URL
-  medium           : # URL
+  medium           : "https://tsahandisaai.medium.com/"
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username
