@@ -1,14 +1,14 @@
 ---
-title: "Paper Title Number 1"
+title: "Temporal Convolution-based Hybrid Model Approach with Representation Learning for Real-Time Acoustic Anomaly Detection"
 collection: publications
 category: manuscripts
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-slidesurl: 'http://academicpages.github.io/files/slides1.pdf'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+excerpt: 'We implemented a novel model archirecture with TCN-CVAE for Real-Time Acoustic Anomaly Detection'
+date: 2024-02-19
+venue: 'ICMLC2024'
+slidesurl: ''
+paperurl: 'https://arxiv.org/pdf/2410.19722'
+citation: 'Dissanayaka, S., Wickramasinghe, M., & Marasinghe, P. (2024). Temporal Convolution-based Hybrid Model Approach with Representation Learning for Real-Time Acoustic Anomaly Detection. ArXiv. https://doi.org/10.1145/3651671.3651693'
 ---
 
-The contents above will be part of a list of publications, if the user clicks the link for the publication than the contents of section will be rendered as a full page, allowing you to provide more information about the paper for the reader. When publications are displayed as a single page, the contents of the above "citation" field will automatically be included below this section in a smaller font.
+The early detection of potential failures in industrial machinery components is paramount for ensuring the reliability and safety of operations, thereby preserving Machine Condition Monitoring (MCM). This research addresses this imperative by introducing an innovative approach to Real-Time Acoustic Anomaly Detection. Our method combines semi-supervised temporal convolution with representation learning and a hybrid model strategy with Temporal Convolutional Networks (TCN) to handle various intricate anomaly patterns found in acoustic data effectively. The proposed model demonstrates superior performance compared to established research in the field, underscoring the effectiveness of this approach. Not only do we present quantitative evidence of its superiority, but we also employ visual representations, such as t-SNE plots, to further substantiate the model’s efficacy.
