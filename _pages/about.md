@@ -6,7 +6,6 @@ redirect_from:
   - /about/
   - /about.html
 ---
-# About Me
 
 Hello! I'm a **PhD candidate in Industrial Engineering** at the **University of Central Florida** with a deep-seated passion for **machine learning/deep learning**, **network science**, and **molecular modeling**. My research focuses on utilizing **geometric deep learning** to advance molecular property prediction, drug discovery, and molecular generation. I’m particularly fascinated by how **graph neural networks (GNNs)** and **transformer models** can unlock insights into complex chemical structures, paving the way for innovative solutions in drug design and biophysics.
 

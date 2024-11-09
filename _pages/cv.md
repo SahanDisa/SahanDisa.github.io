@@ -11,9 +11,8 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Industrial Engineering, University of Central Florida, 2024 - current
+* BSc (Hons) in Computer Science, University of Colombo School of Computing 2019 - 2023 (CGPA : 3.84/4.00)
 
 Work experience
 ======
@@ -34,12 +33,15 @@ Work experience
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Statistics
+* Time Series
+* Machine Learning
+  * Anomaly Detection
+  * Unsupervised Learning
+  * Graph Machine Learning
+* Deep Learning
+* Network Science
+* Geometric Deep Learning
 
 Publications
 ======
