@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-Hello! I'm a **PhD candidate in Industrial Engineering** at the **University of Central Florida** with a deep-seated passion for **machine learning/deep learning**, **network science**, and **molecular modeling**. My research focuses on utilizing **geometric deep learning** to advance molecular property prediction, drug discovery, and molecular generation. I’m particularly fascinated by how **graph neural networks (GNNs)** and **transformer models** can unlock insights into complex chemical structures, paving the way for innovative solutions in drug design and biophysics.
+Hello! I'm a **PhD candidate in Industrial Engineering** at the **University of Central Florida** with a deep-seated passion for machine learning/deep learning, network science, and molecular modeling. My research focuses on utilizing geometric deep learning to advance molecular property prediction, drug discovery, and molecular generation. I’m particularly fascinated by how graph neural networks (GNNs) and transformer models can unlock insights into complex chemical structures, paving the way for innovative solutions in drug design and biophysics.
 
 ### Research Interests
 
@@ -17,7 +17,7 @@ Hello! I'm a **PhD candidate in Industrial Engineering** at the **University of 
 
 ### Background
 
-Previously, I worked as a **Data Scientist at Air Arabia**, where I applied machine learning to projects in **revenue optimization** and **code development automation**. I am also a **Gold Microsoft Learn Student Ambassador**, where I share my knowledge of AI and machine learning with the wider tech community. With hands-on experience in both industry and academia, I bring a unique, application-driven perspective to my research.
+Previously, I worked as a **Data Scientist at Air Arabia**, where I applied machine learning to projects in **revenue optimization** and **machine learning operations**. I am also a **Gold Microsoft Learn Student Ambassador**, where I share my knowledge of AI and machine learning with the wider tech community. With hands-on experience in both industry and academia, I bring a unique, application-driven perspective to my research.
 
 ### Achievements
 
