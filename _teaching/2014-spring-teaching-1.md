@@ -1,11 +1,11 @@
 ---
-title: "Teaching experience 1"
+title: "UCF L.E.A.R.N Graduate Research Mentor"
 collection: teaching
-type: "Undergraduate course"
+type: "Research Mentor"
 permalink: /teaching/2014-spring-teaching-1
-venue: "University 1, Department"
-date: 2014-01-01
-location: "City, Country"
+venue: "University of Central Florida"
+date: 2024-11-19
+location: "Florida, US"
 ---
 
 This is a description of a teaching experience. You can use markdown like any other post.
