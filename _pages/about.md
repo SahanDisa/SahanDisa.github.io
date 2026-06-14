@@ -1,73 +1,382 @@
 ---
 permalink: /
-title: "About Me!"
-author_profile: true
-redirect_from: 
+title: "Sahan Dissanayaka"
+layout: splash
+author_profile: false
+excerpt: ""
+redirect_from:
   - /about/
   - /about.html
 ---
 
-Hello! I'm a **PhD candidate in Industrial Engineering** at the **University of Central Florida** with a deep-seated passion for machine learning/deep learning, network science, and molecular modeling. My research focuses on utilizing geometric deep learning to advance molecular property prediction, drug discovery, and molecular generation. I’m particularly fascinated by how graph neural networks (GNNs) and transformer models can unlock insights into complex chemical structures, paving the way for innovative solutions in drug design and biophysics.
+<script>
+  document.documentElement.style.setProperty('--vw', document.documentElement.clientWidth + 'px');
+</script>
 
-### Research Interests
+<div class="landing">
 
-- **Molecular Representation Learning**: Developing and applying GNNs to enhance molecular property prediction, particularly using 2D and 3D molecular conformations to understand and predict quantum, chemical, and ADME properties.
-- **Graph Machine Learning & Network Science**: Leveraging graph theory and machine learning to model complex interactions, including drug-protein interactions, influence maximization in social networks, and anomaly detection in large datasets.
-- **Time Series & Anomaly Detection**: Applying temporal modeling techniques and hybrid approaches for real-time anomaly detection in various fields, from network science to acoustic pattern recognition.
+  <!-- ============================== HERO ============================== -->
+  <section class="hero" id="home">
+    <canvas id="network-canvas" aria-hidden="true"></canvas>
+    <div class="hero__content">
+      <p class="hero__greeting">Hi, I&rsquo;m</p>
+      <h1 class="hero__name">Sahan Dissanayaka</h1>
+      <p class="hero__role">
+        <span class="hero__role-typed" id="typed-roles"></span>
+      </p>
+      <p class="hero__tagline">
+        Data Scientist II (MLOps) at <strong>ISA, Air Arabia Group</strong>, working on
+        <strong>accelerated data science</strong>,<strong>real-time inference systems</strong><strong>propensity modelling</strong>, and
+        <strong>reinforcement-learning-based decision systems</strong> &mdash; with a research background in graph neural networks from my PhD fellowship at UCF.
+      </p>
+      <div class="hero__badge">
+        <span class="hero__badge-dot"></span>
+        Open to new opportunities
+      </div>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--gradient">View Projects</a>
+        <a href="/cv/" class="btn btn--outline">Resume</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__socials">
+        <a href="https://github.com/SahanDisa" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/sahan-dissanayaka-3099b9191/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.kaggle.com/sahandissanayaka" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+        <a href="https://scholar.google.com/citations?user=ptMnfdwAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+        <a href="https://tsahandisaai.medium.com/" target="_blank" rel="noopener" aria-label="Medium"><i class="fab fa-medium"></i></a>
+        <a href="mailto:tsahandisaai@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero__scroll-indicator" aria-hidden="true"><i class="fas fa-chevron-down"></i></div>
+  </section>
 
-### Background
+  <!-- ============================== ABOUT ============================== -->
+  <section class="section" id="about">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">About Me</span>
+        <h2>Turning data into decisions</h2>
+        <p>A quick look at who I am and what drives my work.</p>
+      </div>
 
-Previously, I worked as a **Data Scientist at Air Arabia**, where I applied machine learning to projects in **revenue optimization** and **machine learning operations**. I am also a **Gold Microsoft Learn Student Ambassador**, where I share my knowledge of AI and machine learning with the wider tech community. With hands-on experience in both industry and academia, I bring a unique, application-driven perspective to my research.
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>
+            I&rsquo;m a <strong>Data Scientist II (MLOps) at ISA, Air Arabia Group</strong>, where my work centers on
+            three streams: <strong>end-to-end workflow design</strong> with MLOps, <strong>propensity
+            modelling</strong> for customer behaviour, and <strong>reinforcement-learning-based decision systems</strong> for consumers &mdash; built and shipped through production MLOps pipelines.
+          </p>
+          <p>
+            I have a strong research background <strong>PhD fellowship in Industrial Engineering at the University of Central Florida</strong>, researching time series, anomaly detection, eometric deep learning, graph neural networks and transformer architectures for drug discovery and predictive maintainance, before returning to industry. That research still shapes how I approach applied ML problems today.
+          </p>
+          <p>
+            My toolkit spans <strong>Time Series, Machine Learning, MLOps, network science, and
+            Reinforcement Learning</strong>, and I&rsquo;m driven by turning ambitious ideas into systems that work reliably in production. I&rsquo;m currently <strong>open to new opportunities</strong> in applied ML and MLOps/LLMOps.
+          </p>
+        </div>
 
-### Achievements
+        <div class="about__stats reveal">
+          <div class="stat">
+            <span class="stat__num">DS II</span>
+            <span class="stat__label">MLOps, ISA &middot; Air Arabia Group</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">4+</span>
+            <span class="stat__label">Years in ML &amp; Data Science</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">GSoC</span>
+            <span class="stat__label">2021 Contributor &amp; Mentor</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num">PhD</span>
+            <span class="stat__label">Fellowship, Industrial Engineering, UCF</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-- **Graduate Research Fellowship, University of Central Florida**: Awarded for outstanding contributions to research in industrial engineering and machine learning.
-- **DeepLearning.ai Mathematics for Machine Learning Specialization**: Completed advanced coursework to enhance my understanding of machine learning foundations.
-- Publications in leading venues, including **ACM**, focusing on deep learning applications in network science and anomaly detection.
+  <!-- ============================== SKILLS ============================== -->
+  <section class="section section--alt" id="skills">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Toolbox</span>
+        <h2>Skills &amp; Technologies</h2>
+        <p>The stack I use to research, build, and ship machine learning systems.</p>
+      </div>
 
-### Future Directions
+      <div class="skills__grid reveal-stagger">
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Data &amp; Time Series</h3>
+          <div class="tags">
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">SQL</span>
+            <span class="tag">Snowflake</span>
+            <span class="tag">Time-Series Forecasting</span>
+            <span class="tag">Propensity Modelling</span>
+            <span class="tag">Anomaly Detection</span>
+            <span class="tag">Recommendation Systems</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fas fa-diagram-project"></i></div>
+          <h3>Machine Learning &amp; Deep Learning</h3>
+          <div class="tags">
+            <span class="tag">PyTorch</span>
+            <span class="tag">PyTorch Geometric</span>
+            <span class="tag">scikit-learn</span>
+            <span class="tag">Graph Neural Networks</span>
+            <span class="tag">Transformers</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fas fa-robot"></i></div>
+          <h3>Reinforcement Learning &amp; Research</h3>
+          <div class="tags">
+            <span class="tag">OpenAI Gym</span>
+            <span class="tag">Stable-Baselines3</span>
+            <span class="tag">Decision Systems</span>
+            <span class="tag">Network Science</span>
+            <span class="tag">Research &amp; Publications</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fas fa-cloud"></i></div>
+          <h3>MLOps &amp; Cloud</h3>
+          <div class="tags">
+            <span class="tag">Azure ML</span>
+            <span class="tag">Docker</span>
+            <span class="tag">MLflow</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">Git</span>
+            <span class="tag">Kubernetes</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fas fa-brain"></i></div>
+          <h3>Agentic AI &amp; LLMs</h3>
+          <div class="tags">
+            <span class="tag">LangChain/LangGraph/LlamaIndex</span>
+            <span class="tag">Hugging Face/Ollama</span>
+            <span class="tag">Pinecone/Qdrant</span>
+            <span class="tag">CrewAI</span>
+            <span class="tag">LoRA/RLHF</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-card__icon"><i class="fas fa-shield-halved"></i></div>
+          <h3>Data Engineering &amp; Responsible AI</h3>
+          <div class="tags">
+            <span class="tag">ETL Pipelines</span>
+            <span class="tag">Airflow</span>
+            <span class="tag">Data Quality</span>
+            <span class="tag">Model Fairness</span>
+            <span class="tag">Explainability</span>
+            <span class="tag">AI Governance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-I am actively exploring the intersection of **molecular property prediction** and **geometric deep learning**, with a focus on developing interpretable AI models for drug discovery. My goal is to advance the understanding of how 3D molecular data can improve the accuracy and applicability of predictive models in pharmaceuticals, biology, and chemistry. 
+  <!-- ============================== PROJECTS ============================== -->
+  <section class="section" id="projects">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Selected Work</span>
+        <h2>Projects &amp; Research</h2>
+        <p>Applied MLOps work at ISA, Air Arabia Group, alongside open-source and PhD research.</p>
+      </div>
 
-Feel free to explore my site to learn more about my work, publications, and ongoing projects. You can also reach out to me on [LinkedIn](https://www.linkedin.com/in/sahan-dissanayaka-3099b9191/) or [GitHub](https://github.com/SahanDisa) to connect and collaborate!
+      <div class="projects__grid reveal-stagger">
 
-<!-- This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).
+        <div class="project-card">
+          <div class="project-card__icon"><i class="fas fa-wave-square"></i></div>
+          <h3>Time-Series Forecasting &amp; Anomaly Detection</h3>
+          <div class="tags">
+            <span class="tag">Forecasting</span>
+            <span class="tag">Hybrid Models</span>
+            <span class="tag">Open Source</span>
+          </div>
+          <p>
+            Forecasting demand and revenue signals and detecting anomalies in operational time series at ISA, plus
+            an open-source package for benchmarking time-series forecast error metrics &mdash; published to PyPI
+            and npm.
+          </p>
+          <a href="https://github.com/SahanDisa/pypi-time-series-error-package" target="_blank" rel="noopener" class="project-card__link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+        <div class="project-card">
+          <div class="project-card__icon"><i class="fas fa-user-tag"></i></div>
+          <h3>Propensity Modelling for Customer Behaviour</h3>
+          <div class="tags">
+            <span class="tag">Propensity Models</span>
+            <span class="tag">Customer Analytics</span>
+            <span class="tag">ISA &middot; Air Arabia Group</span>
+          </div>
+          <p>
+            Building propensity models that predict customer behaviour &mdash; purchase likelihood, upsell, and
+            engagement &mdash; to power targeted, revenue-driving decisions across the airline group.
+          </p>
+          <a href="/research/" class="project-card__link">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over -- just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+        <div class="project-card">
+          <div class="project-card__icon"><i class="fas fa-brain"></i></div>
+          <h3>Reinforcement Learning for Decision Systems</h3>
+          <div class="tags">
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Dynamic Pricing</span>
+            <span class="tag">MLOps</span>
+          </div>
+          <p>
+            Developing RL-based models for sequential decision-making &mdash; dynamic pricing and resource
+            allocation &mdash; and operationalising them through production MLOps pipelines.
+          </p>
+          <a href="/research/" class="project-card__link">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+        <div class="project-card">
+          <div class="project-card__icon"><i class="fas fa-cloud-arrow-up"></i></div>
+          <h3>MLOps Pipelines on Azure</h3>
+          <div class="tags">
+            <span class="tag">Azure ML</span>
+            <span class="tag">CI/CD</span>
+            <span class="tag">MLflow</span>
+            <span class="tag">Docker</span>
+          </div>
+          <p>
+            Built and deployed end-to-end ML pipelines &mdash; automated training, validation, and deployment &mdash;
+            for revenue-optimization models, and demoed the full Azure MLOps workflow at Intellihack 3.0.
+          </p>
+          <a href="https://github.com/SahanDisa/deploy-and-orchestrate-machine-learning-pipelines-with-azure" target="_blank" rel="noopener" class="project-card__link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+        <div class="project-card">
+          <div class="project-card__icon"><i class="fas fa-atom"></i></div>
+          <h3>Molecular Property Prediction with GNNs</h3>
+          <div class="tags">
+            <span class="tag">PyTorch Geometric</span>
+            <span class="tag">GNNs</span>
+            <span class="tag">Drug Discovery</span>
+          </div>
+          <p>
+            PhD research at UCF: graph neural network architectures that learn from 2D and 3D molecular
+            conformations to predict quantum, chemical, and ADME properties &mdash; supporting interpretable drug
+            discovery and molecular generation.
+          </p>
+          <a href="/research/" class="project-card__link">Read more <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-Create content & metadata
-------
-For site content, there is one markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+        <div class="project-card">
+          <div class="project-card__icon"><i class="fas fa-circle-nodes"></i></div>
+          <h3>Network Science Research</h3>
+          <div class="tags">
+            <span class="tag">Graph ML</span>
+            <span class="tag">Influence Maximization</span>
+            <span class="tag">Anomaly Detection</span>
+          </div>
+          <p>
+            Modeling complex interaction networks &mdash; from drug-protein interactions to social influence &mdash;
+            using graph theory and machine learning to surface anomalies and high-impact nodes.
+          </p>
+          <a href="https://github.com/SahanDisa/NetScienceResearch" target="_blank" rel="noopener" class="project-card__link">View on GitHub <i class="fas fa-arrow-right"></i></a>
+        </div>
 
-**Markdown generator**
+      </div>
+    </div>
+  </section>
 
-I have also created [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the markdown files, then commit and push them to the GitHub repository.
+  <!-- ============================== EXPERIENCE ============================== -->
+  <section class="section section--alt" id="experience">
+    <div class="section__inner">
+      <div class="section__header reveal">
+        <span class="section__eyebrow">Journey</span>
+        <h2>Experience &amp; Education</h2>
+        <p>From undergraduate research to a PhD fellowship and back to applied ML in industry.</p>
+      </div>
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+      <div class="timeline">
+        <div class="timeline__item reveal">
+          <span class="timeline__date">Present</span>
+          <h3>Data Scientist II, MLOps</h3>
+          <span class="timeline__org">ISA, Air Arabia Group</span>
+          <p>
+            Leading work on time-series forecasting, propensity modelling, and reinforcement-learning-based
+            decision systems &mdash; designing, training, and deploying models through production MLOps pipelines.
+          </p>
+        </div>
 
-Example: editing a markdown file for a talk
-![Editing a markdown file for a talk](/images/editing-talk.png)
+        <div class="timeline__item reveal">
+          <span class="timeline__date">2024</span>
+          <h3>PhD Fellowship, Industrial Engineering</h3>
+          <span class="timeline__org">University of Central Florida</span>
+          <p>
+            Researched geometric deep learning for molecular property prediction, drug discovery, and molecular
+            generation using graph neural networks and transformer models.
+          </p>
+        </div>
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful. -->
+        <div class="timeline__item reveal">
+          <span class="timeline__date">2023 &mdash; 2024</span>
+          <h3>Data Scientist</h3>
+          <span class="timeline__org">Air Arabia</span>
+          <p>
+            Applied machine learning to revenue optimization and built MLOps pipelines on Azure for automated
+            model training, validation, and deployment.
+          </p>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__date">2021</span>
+          <h3>GSoC Contributor &amp; Mentor</h3>
+          <span class="timeline__org">SCoRe Lab</span>
+          <p>
+            Contributed to open-source machine learning tooling during Google Summer of Code 2021, and returned as a
+            mentor to guide the next cohort of contributors.
+          </p>
+        </div>
+
+        <div class="timeline__item reveal">
+          <span class="timeline__date">2019 &mdash; 2023</span>
+          <h3>BSc (Hons) Computer Science</h3>
+          <span class="timeline__org">University of Colombo School of Computing</span>
+          <p>
+            Graduated with a CGPA of 3.84/4.00, with a focus on machine learning, network science, and software
+            engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================== CONTACT ============================== -->
+  <section class="section" id="contact">
+    <div class="section__inner">
+      <div class="contact__card reveal">
+        <h2>Let&rsquo;s build something great</h2>
+        <p>
+          Open to new opportunities in applied ML &amp; MLOps, research collaborations, and conversations about
+          time series, propensity modelling, and reinforcement learning. Drop me a line.
+        </p>
+        <a href="mailto:tsahandisaai@gmail.com" class="btn btn--gradient">Say Hello</a>
+        <div class="contact__socials">
+          <a href="https://github.com/SahanDisa" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/sahan-dissanayaka-3099b9191/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://www.kaggle.com/sahandissanayaka" target="_blank" rel="noopener" aria-label="Kaggle"><i class="fab fa-kaggle"></i></a>
+          <a href="https://scholar.google.com/citations?user=ptMnfdwAAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="ai ai-google-scholar"></i></a>
+          <a href="https://orcid.org/0009-0004-0972-6200" target="_blank" rel="noopener" aria-label="ORCID"><i class="ai ai-orcid"></i></a>
+          <a href="https://tsahandisaai.medium.com/" target="_blank" rel="noopener" aria-label="Medium"><i class="fab fa-medium"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__meta">
+        Built with Jekyll &middot; Hosted on GitHub Pages
+      </div>
+    </div>
+  </section>
+
+</div>

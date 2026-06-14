@@ -1,0 +1,716 @@
+/* ==========================================================================
+   LANDING PAGE
+   ========================================================================== */
+
+.landing {
+  font-family: $global-font-family;
+  overflow-x: hidden;
+
+  h1, h2, h3, h4 {
+    font-family: "Sora", $global-font-family;
+    color: $darker-gray;
+    letter-spacing: -0.01em;
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  /* full-bleed breakout for section bands.
+     `--vw` is set in JS to document.documentElement.clientWidth, which
+     excludes the scrollbar gutter that 100vw includes - without it the
+     breakout overshoots the visible viewport and leaves an edge gap. */
+  .hero,
+  .section {
+    position: relative;
+    left: 50%;
+    width: 100vw;
+    width: var(--vw, 100vw);
+    transform: translateX(-50%);
+  }
+
+  .section__inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 5.5rem 1.5rem;
+
+    @include breakpoint($small) {
+      padding: 4rem 1.25rem;
+    }
+  }
+
+  .section--alt {
+    background: linear-gradient(180deg, rgba(34, 211, 238, 0.03), rgba(139, 92, 246, 0.04));
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Section header
+   -------------------------------------------------------------------------- */
+
+.landing .section__header {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 3.5rem;
+
+  .section__eyebrow {
+    display: inline-block;
+    font-family: "JetBrains Mono", $monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: $accent-cyan;
+    margin-bottom: 0.75rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+    margin: 0 0 0.75rem;
+
+    @include breakpoint(max-width $small) {
+      font-size: 1.75rem;
+    }
+  }
+
+  p {
+    color: $gray;
+    font-size: 1.05rem;
+    margin: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Buttons
+   -------------------------------------------------------------------------- */
+
+.landing .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.85em 1.75em;
+  border-radius: 999px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  font-family: $global-font-family;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: $global-transition;
+  white-space: nowrap;
+
+  &--gradient {
+    background: linear-gradient(135deg, $accent-cyan, $accent-violet);
+    color: #0a0e17;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px -10px rgba(139, 92, 246, 0.6);
+    }
+  }
+
+  &--outline {
+    border-color: $border-color;
+    color: $darker-gray;
+    background: rgba(255, 255, 255, 0.02);
+
+    &:hover {
+      border-color: $accent-cyan;
+      color: $accent-cyan;
+      transform: translateY(-2px);
+    }
+  }
+
+  &--ghost {
+    color: $gray;
+
+    &:hover {
+      color: $accent-violet;
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Hero
+   -------------------------------------------------------------------------- */
+
+.landing .hero {
+  min-height: calc(100vh - #{$masthead-height});
+  margin-top: -2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: $background-color;
+  overflow: hidden;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(90px);
+    opacity: 0.35;
+    z-index: 0;
+    animation: blob-drift 22s ease-in-out infinite alternate;
+  }
+
+  &::before {
+    width: 420px;
+    height: 420px;
+    top: -10%;
+    left: 8%;
+    background: $accent-cyan;
+  }
+
+  &::after {
+    width: 480px;
+    height: 480px;
+    bottom: -15%;
+    right: 5%;
+    background: $accent-violet;
+    animation-delay: -8s;
+  }
+
+  #network-canvas {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0.55;
+  }
+
+  .hero__content {
+    position: relative;
+    z-index: 2;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    text-align: center;
+  }
+
+  .hero__greeting {
+    font-family: "JetBrains Mono", $monospace;
+    color: $accent-cyan;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    margin: 0 0 1rem;
+  }
+
+  .hero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6em;
+    padding: 0.45em 1.1em;
+    border-radius: 999px;
+    border: 1px solid $border-color;
+    background: rgba(34, 211, 238, 0.06);
+    color: $darker-gray;
+    font-family: "JetBrains Mono", $monospace;
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__badge-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $success-color;
+    box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6);
+    animation: pulse-dot 2s infinite;
+  }
+
+  .hero__name {
+    font-size: 3.5rem;
+    margin: 0 0 0.5rem;
+    background: linear-gradient(135deg, #f8fafc, $accent-cyan 60%, $accent-violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    @include breakpoint(max-width $small) {
+      font-size: 2.4rem;
+    }
+  }
+
+  .hero__role {
+    font-size: 1.4rem;
+    color: $darker-gray;
+    margin: 0 0 1.25rem;
+    min-height: 1.8em;
+    font-family: "JetBrains Mono", $monospace;
+
+    @include breakpoint(max-width $small) {
+      font-size: 1.05rem;
+    }
+  }
+
+  .hero__role-typed::after {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 1.1em;
+    margin-left: 0.15em;
+    background: $accent-cyan;
+    vertical-align: -0.15em;
+    animation: caret-blink 1s step-end infinite;
+  }
+
+  .hero__tagline {
+    color: $gray;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    margin: 0 auto 2.25rem;
+    max-width: 560px;
+  }
+
+  .hero__cta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .hero__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+
+    a {
+      color: $gray;
+      font-size: 1.25rem;
+      transition: $global-transition;
+
+      &:hover {
+        color: $accent-cyan;
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  .hero__scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    color: $gray;
+    font-size: 1.4rem;
+    animation: bounce 2.4s ease-in-out infinite;
+  }
+}
+
+@keyframes blob-drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  50%  { transform: translate(40px, 60px) scale(1.15); }
+  100% { transform: translate(-30px, -40px) scale(0.95); }
+}
+
+@keyframes caret-blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translate(-50%, 0); }
+  50% { transform: translate(-50%, 10px); }
+}
+
+@keyframes pulse-dot {
+  0% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0.6); }
+  70% { box-shadow: 0 0 0 8px rgba(52, 211, 153, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(52, 211, 153, 0); }
+}
+
+/* --------------------------------------------------------------------------
+   About
+   -------------------------------------------------------------------------- */
+
+.landing .about__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 3rem;
+  align-items: center;
+
+  @include breakpoint(max-width $medium) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+.landing .about__text {
+  p {
+    color: $text-color;
+    font-size: 1.05rem;
+    line-height: 1.85;
+    margin: 0 0 1.25rem;
+  }
+
+  strong {
+    color: $darker-gray;
+  }
+}
+
+.landing .about__stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+
+  .stat {
+    background: $surface-color;
+    border: 1px solid $border-color;
+    border-radius: 14px;
+    padding: 1.5rem 1.25rem;
+    text-align: center;
+    transition: $global-transition;
+
+    &:hover {
+      border-color: $accent-cyan;
+      transform: translateY(-4px);
+    }
+  }
+
+  .stat__num {
+    display: block;
+    font-family: "Sora", $global-font-family;
+    font-size: 2.25rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, $accent-cyan, $accent-violet);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .stat__label {
+    display: block;
+    margin-top: 0.4rem;
+    font-size: 0.85rem;
+    color: $gray;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Skills
+   -------------------------------------------------------------------------- */
+
+.landing .skills__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.landing .skill-card {
+  background: $surface-color;
+  border: 1px solid $border-color;
+  border-radius: 16px;
+  padding: 2rem 1.75rem;
+  transition: $global-transition;
+
+  &:hover {
+    transform: translateY(-6px);
+    border-color: $accent-violet;
+    box-shadow: 0 16px 40px -20px rgba(139, 92, 246, 0.45);
+  }
+
+  .skill-card__icon {
+    font-size: 1.6rem;
+    width: 52px;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    margin-bottom: 1.25rem;
+    background: linear-gradient(135deg, rgba(34, 211, 238, 0.15), rgba(139, 92, 246, 0.15));
+    color: $accent-cyan;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.9rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .tag {
+    font-family: "JetBrains Mono", $monospace;
+    font-size: 0.75rem;
+    padding: 0.3em 0.7em;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid $border-color;
+    color: $text-color;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Projects
+   -------------------------------------------------------------------------- */
+
+.landing .projects__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+}
+
+.landing .project-card {
+  position: relative;
+  background: $surface-color;
+  border: 1px solid $border-color;
+  border-radius: 16px;
+  padding: 2rem;
+  transition: $global-transition;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: -1px;
+    border-radius: 16px;
+    padding: 1px;
+    background: linear-gradient(135deg, $accent-cyan, $accent-violet);
+    opacity: 0;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    transition: opacity 0.25s ease;
+    pointer-events: none;
+  }
+
+  &:hover {
+    transform: translateY(-6px);
+
+    &::before {
+      opacity: 1;
+    }
+  }
+
+  .project-card__icon {
+    font-size: 1.5rem;
+    color: $accent-cyan;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin: 0 0 0.6rem;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 0.95rem;
+    line-height: 1.65;
+    flex-grow: 1;
+    margin: 0 0 1.25rem;
+  }
+
+  .tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .tag {
+    font-family: "JetBrains Mono", $monospace;
+    font-size: 0.7rem;
+    padding: 0.3em 0.7em;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid $border-color;
+    color: $gray;
+  }
+
+  .project-card__link {
+    align-self: flex-start;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: $accent-cyan;
+
+    i {
+      margin-left: 0.35em;
+      transition: transform 0.2s ease;
+    }
+
+    &:hover i {
+      transform: translateX(3px);
+    }
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Experience timeline
+   -------------------------------------------------------------------------- */
+
+.landing .timeline {
+  position: relative;
+  max-width: 760px;
+  margin: 0 auto;
+  padding-left: 2.5rem;
+  border-left: 2px solid $border-color;
+
+  @include breakpoint(max-width $small) {
+    padding-left: 1.5rem;
+  }
+}
+
+.landing .timeline__item {
+  position: relative;
+  padding-bottom: 2.75rem;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: -2.6875rem;
+    top: 0.35rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: $background-color;
+    border: 2px solid $accent-cyan;
+    box-shadow: 0 0 0 4px rgba(34, 211, 238, 0.12);
+
+    @include breakpoint(max-width $small) {
+      left: -1.6875rem;
+    }
+  }
+
+  .timeline__date {
+    font-family: "JetBrains Mono", $monospace;
+    font-size: 0.8rem;
+    color: $accent-cyan;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+    display: block;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    margin: 0 0 0.15rem;
+  }
+
+  .timeline__org {
+    display: block;
+    color: $accent-violet;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+
+  p {
+    color: $text-color;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   Contact
+   -------------------------------------------------------------------------- */
+
+.landing .contact__card {
+  text-align: center;
+  background: linear-gradient(135deg, rgba(34, 211, 238, 0.08), rgba(139, 92, 246, 0.08));
+  border: 1px solid $border-color;
+  border-radius: 24px;
+  padding: 4rem 2rem;
+
+  h2 {
+    font-size: 2rem;
+    margin: 0 0 0.75rem;
+  }
+
+  p {
+    color: $gray;
+    max-width: 480px;
+    margin: 0 auto 2rem;
+    font-size: 1.05rem;
+  }
+
+  .contact__socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2.5rem;
+
+    a {
+      color: $gray;
+      font-size: 1.4rem;
+      transition: $global-transition;
+
+      &:hover {
+        color: $accent-cyan;
+        transform: translateY(-3px);
+      }
+    }
+  }
+}
+
+.landing .footer__meta {
+  text-align: center;
+  padding: 2rem 1.5rem 3rem;
+  color: $gray;
+  font-size: 0.8rem;
+  font-family: "JetBrains Mono", $monospace;
+}
+
+/* --------------------------------------------------------------------------
+   Scroll reveal
+   -------------------------------------------------------------------------- */
+
+.landing .reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+
+  &.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.landing .reveal-stagger > * {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.landing .reveal-stagger.is-visible > * {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.landing .reveal-stagger.is-visible > *:nth-child(1) { transition-delay: 0s; }
+.landing .reveal-stagger.is-visible > *:nth-child(2) { transition-delay: 0.08s; }
+.landing .reveal-stagger.is-visible > *:nth-child(3) { transition-delay: 0.16s; }
+.landing .reveal-stagger.is-visible > *:nth-child(4) { transition-delay: 0.24s; }
+.landing .reveal-stagger.is-visible > *:nth-child(5) { transition-delay: 0.32s; }
+.landing .reveal-stagger.is-visible > *:nth-child(6) { transition-delay: 0.4s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .landing * {
+    animation: none !important;
+    transition: none !important;
+  }
+
+  .landing .reveal,
+  .landing .reveal-stagger > * {
+    opacity: 1;
+    transform: none;
+  }
+}
