@@ -26,7 +26,7 @@ redirect_from:
       </p>
       <p class="hero__tagline">
         Data Scientist II (MLOps) at <strong>ISA, Air Arabia Group</strong>, working on
-        <strong>accelerated data science</strong>,<strong>real-time inference systems</strong><strong>propensity modelling</strong>, and
+        <strong>accelerated data science</strong>,<strong> real-time inference systems</strong>,<strong> propensity modelling</strong>, and
         <strong>reinforcement-learning-based decision systems</strong> &mdash; with a research background in graph neural networks from my PhD fellowship at UCF.
       </p>
       <div class="hero__badge">
